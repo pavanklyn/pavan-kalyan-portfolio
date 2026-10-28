@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-bone font-body antialiased; }
+:focus-visible { outline: 2px solid #FFB45A; outline-offset: 3px; border-radius: 4px; }
+::selection { background: #6FA8FF; color: #070A12; }
+
+.stage { perspective: 1500px; }
+.tilt, .rig { transform-style: preserve-3d; }
+.tilt { transform: rotateX(63deg); }
+.slab {
+  position: absolute; left: 50%; top: 50%; width: 360px; height: 360px; margin: -180px 0 0 -180px;
+  border: 1px solid rgba(111, 168, 255, .55); border-radius: 22px;
+  background:
+    linear-gradient(rgba(111,168,255,.09) 1px, transparent 1px) 0 0 / 36px 36px,
+    linear-gradient(90deg, rgba(111,168,255,.09) 1px, transparent 1px) 0 0 / 36px 36px,
+    rgba(14, 19, 32, .55);
+  box-shadow: 0 0 60px rgba(111, 168, 255, .12), inset 0 0 40px rgba(111, 168, 255, .08);
+}
+.slab:last-child { border-color: rgba(255, 180, 90, .8); box-shadow: 0 0 80px rgba(255, 180, 90, .18), inset 0 0 40px rgba(255, 180, 90, .1); }
+.slab span { position: absolute; left: 16px; bottom: 14px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 15px; color: #E8EBF2; }
+.slab small { position: absolute; right: 16px; top: 14px; font-size: 12px; color: #8D96AB; }
+@media (max-width: 640px) { .slab { width: 240px; height: 240px; margin: -120px 0 0 -120px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
