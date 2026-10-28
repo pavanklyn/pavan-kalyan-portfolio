@@ -47,8 +47,8 @@ The site is deployed on Netlify. To deploy a new version, run `npm run build` an
 ## Contact
 
 - GitHub: [@pavanklyn](https://github.com/pavanklyn)
-- LinkedIn: add your profile link here
-- Email: add your email here
+- LinkedIn: 'https://www.linkedin.com/in/buradagunta-pavan-kalyan/'
+- Email: pavankalyanburadagunta@gmail.com
 
 ---
 
